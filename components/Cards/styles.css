@@ -1,0 +1,341 @@
+
+
+.card-flex .review-icon-container {
+  margin-top: 220px;
+  margin-right: 220px;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+/* .main-div{
+  position: relative;
+} */
+
+.card-img {
+  /* width: 980px; */
+  border-radius: 1rem;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px 0 5px;
+  font-weight: 700;
+}
+
+
+
+.card-title-desc {
+  margin-left: 4px;
+}
+
+.card-date {
+  margin-left: 7px;
+  opacity: 50%;
+}
+
+.card-rating {
+  display: flex;
+}
+
+.card-price {
+  padding-top: 0.4rem;
+  font-size: medium;
+  font-weight: 300;
+  display: flex;
+  margin-left: 7px;
+}
+
+/* swip css */
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%
+}
+
+@media only screen and (max-width: 866px) {
+  .carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.slide {
+  border-radius: 0.1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-hidden {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  filter: drop-shadow(0px 0px 5px #555);
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  opacity: 25%;
+}
+
+.card:hover .arrow {
+  position: absolute;
+  filter: drop-shadow(0px 0px 5px #555);
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  opacity: 60%;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 1rem;
+}
+
+.arrow-right {
+  right: 1rem;
+}
+
+.indicators {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.indicator {
+  background-color: white;
+  height: 0.15rem;
+  width: 1.3rem;
+  border: none;
+  outline: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+
+.indicator-inactive {
+  background-color: #ccc;
+  opacity: 0.7;
+}
+
+
+
+/* Add your custom styles for Swiper navigation here */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* margin-bottom: 100px; */
+  width: 100px;
+  height: 100px;
+  color: black !important;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  opacity: 0.7;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* .swiper-button-prev {
+  margin-left: 60%;
+  margin-top: 50%;
+  display: none;
+}
+
+.swiper-button-next {
+  display: none;
+  margin-right: 12%;
+} */
+
+.swiper-button-prev {
+  margin-left: 0%;
+}
+
+.swiper-button-next {
+
+  margin-right: 0%;
+}
+
+.swiper-horizontal>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  transition-duration: 2s !important;
+  width: 35% !important;
+  left: 63% !important;
+}
+
+.fade-in {
+  animation: fadeIn ease 1.5s;
+  -webkit-animation: fadeIn ease 1.5s;
+  -moz-animation: fadeIn ease 1.5s;
+  -o-animation: fadeIn ease 1.5s;
+  -ms-animation: fadeIn ease 1.5s;
+
+}
+
+.swiper-scrollbar-drag {
+  width: 30% !important;
+}
+.swiper-slide{
+  width: 400px;
+  height: 500px;
+}
+.card-flex {
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+  width: 100%;
+}
+.card1flex{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+  width: 100%;
+}
+
+.swiper-wrapper{
+  gap: 5px;
+  margin-left:15px;
+}
+
+
+/* .bloc-tabs19.active-tabs {
+  border-bottom: 2px solid #000; 
+
+/* .bloc-tabs1{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+} */
+
+/* .bloc-tabs--sticky {
+  position: stickey;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white; /*
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+/* Adjust the margin-top value to match the height of your sticky element */
+/* .content-tabs{
+
+}
+
+.wrapper.sticky .bloc-tabs1 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.bloc-tabs19.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+} */
+
+@media screen and (max-width:450px) {
+  /* .wrapper.sticky .bloc-tabs1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding-left: 20px;
+    padding-right: 20px;
+  } */
+}
+
+
+/* .circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid rgb(93, 88, 88);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.circle-1 {
+  top: 20%;
+  left: 20%;
+  background-color: white;
+}
+
+.circle-2 {
+  top: 70%;
+  left: 70%;
+}
+
+.tooltip-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.tooltip-content {
+  max-width: 200px;
+}
+
+.circle:hover {
+  background-color: white;
+}
+
+.circle:hover + .tooltip-container {
+  opacity: 1;
+} */

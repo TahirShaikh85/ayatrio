@@ -1,0 +1,18 @@
+.footer-container {
+    padding: 70px 50px;
+    background-color: #f5f5f5;
+}
+
+.list-socialicon {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.footer_bg {
+    background: #f5f5f5;
+    border-top: 1px solid #ccc;
+}
