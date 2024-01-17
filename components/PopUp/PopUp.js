@@ -15,10 +15,6 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 import SwiperCore from "swiper/core";
 SwiperCore.use([Autoplay, Navigation]);
-// import {
-//   recomendProduct,
-//   recomendationLoader,
-// } from "../../Features/Slices/recommendationSlice";
 
 function App() {
   const [fetchedCategories, setFetchedCategories] = useState(null);
@@ -29,19 +25,21 @@ function App() {
   const fetchCategories = async () => {
     try {
       const response = await axios.get(
-        `http://3.224.109.20:8080/api/categories`
+        `https://api.ayatrio.com/api/categories`
       );
       setFetchedCategories(response.data[0].categories);
     } catch (error) {
       console.error("Error fetching categories:", error.message);
     }
   };
-  console.log(process.env.NEXT_PUBLIC_API_BASE_URL);
+
+  console.log("url: ", process.env.NEXT_PUBLIC_API_BASE_URL);
+
   console.log(fetchedCategories);
   const fetchCitiesAndHobbies = async () => {
     try {
       const response = await axios.get(
-        `http://3.224.109.20:8080/api/citiesAndHobbies`
+        `https://api.ayatrio.com/api/citiesAndHobbies`
       );
       setFetchedCities(response.data[0].cities);
       setFetchedHobbies(response.data[0].hobbies);
@@ -192,7 +190,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        `http://3.224.109.20:8080/api/preferences`,
+        `https://api.ayatrio.com/api/preferences`,
         {
           deviceId: localStorage.getItem("deviceid"),
           userPreferredCities: preferencesDataToSendToBackend.preferredCities,
