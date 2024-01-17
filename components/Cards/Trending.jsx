@@ -29,12 +29,15 @@ const Trending = () => {
   const [isLoading, setLoading] = useState(true);
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://43.204.166.53:8080/api/trending-products");
+      const response = await axios.get("https://api.ayatrio.com/api/trending-products");
       setTrendingData(response.data);
       setLoading(false);
     };
     fetchData();
   }, []);
+
+  console.log("url: ", process.env.NEXT_PUBLIC_API_BASE_URL);
+
   const swiperUseref = useRef(null);
   const swiperOptions2 = {
     slidesPerView: 4.08,
